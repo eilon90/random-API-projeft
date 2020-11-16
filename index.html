@@ -31,9 +31,8 @@
     </div>
 
     <script id = "user-template" type = "text/x-handlebars-template">
-        <img src = "{{picture.medium}}" id = "profile-pic"/>
-        <h2 class = "user-info">{{name.first}} {{name.last}}</h2><br>
-        <h2 class = "user-info">{{location.city}}, {{location.state}}</h2>
+        <img src = "{{picture}}" id = "profile-pic"/>
+        <h2 class = "user-info">{{firstName}} {{lastName}}<br>{{city}}, {{state}}</h2>
     </script>
 
     <script id = "quote-template" type = "text/x-handlebars-template">
@@ -43,18 +42,20 @@
 
     
     <script id = "pokemon-template" type = "text/x-handlebars-template">
-        <img src="{{sprites.front_default}}" id = "pokemon-image"/>
+        <img src="{{image}}" id = "pokemon-image"/>
         <h2 id = "pokemon-text">Favorite Pokemon: {{name}}</h2>
     </script>
 
     
     <script id = "meat-template" type = "text/x-handlebars-template">
-        <h4 class = "meat-text">About me:<br>{{meet}}</h4>
+        <h4 class = "meat-text">About me:<br>{{meat}}</h4>
     </script>
 
     
     <script id = "friends-template" type = "text/x-handlebars-template"> 
-        <li class = "friends">{{name.first}} {{name.last}}</li>
+        {{# each friends}}
+        <li class = "friends">{{firstName}} {{lastName}}</li>
+        {{/ each}}
     </script>
 
     
