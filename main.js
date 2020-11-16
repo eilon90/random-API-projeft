@@ -16,8 +16,8 @@ $('#display').on('click', function() {
         meatRender.render(apiManager.data);
         friRender.render(apiManager.data);
 
-        $('#display').css('background-color', 'red');
-        $('#display').css('cursor', 'auto');
+        $(this).css('background-color', 'red');
+        $(this).css('cursor', 'auto');
     }
 });
 
