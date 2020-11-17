@@ -1,28 +1,11 @@
 class APIManager {
     constructor() {
         this.data = {
-            user: {
-                firstName: '',
-                lastName: '',
-                pictue: '',
-                city: '',
-                state: ''
-           },
+            user: {},
            quote: '',
-           pokemon: {
-               image: '',
-               name: ''
-           },
+           pokemon: {},
            meat: '',
-           friends: [
-               {firstName: '', lastName: ''},
-               {firstName: '', lastName: ''},
-               {firstName: '', lastName: ''},
-               {firstName: '', lastName: ''},
-               {firstName: '', lastName: ''},
-               {firstName: '', lastName: ''}
-            ]
-
+           friends: [{}, {}, {}, {}, {}, {}]
         },
         
         this.finishIn4 = 0;

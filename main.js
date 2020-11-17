@@ -8,7 +8,6 @@ $('#load').on('click', function() {
 
 
 $('#display').on('click', function() {
-    console.log(apiManager.data);
     if ($(this).css('cursor') === 'pointer') {
         userRender.render(apiManager.data.user);
         quoRender.render(apiManager.data.quote);
