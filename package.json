@@ -1,0 +1,23 @@
+{
+  "name": "userpage-api-project-student",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "review": "node node_modules/elevation-pr/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eilon90/random-API-projeft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eilon90/random-API-projeft/issues"
+  },
+  "homepage": "https://github.com/eilon90/random-API-projeft#readme",
+  "dependencies": {
+    "elevation-pr": "^1.4.0"
+  }
+}

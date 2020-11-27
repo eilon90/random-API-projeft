@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>API Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">	
+        <div class="user-container"></div>	
+        <div class="quote-container"></div>	
+        <div class="content-container">	
+            <div class="pokemon-container"></div>	
+            <div class="meat-container"></div>	
+        </div>	
+        <div class="friends">	
+            <h4>Friends</h4>	
+            <div><ul class="friends-container"></ul>	
+            </div>	
+        </div>	
+        <div class="buttons">	
+            <button id = "load">Load User Data</button>	
+            <button id = "display">Display User</button>	
+        </div>	
+    </div>
+
+    <script id = "user-template" type = "text/x-handlebars-template">
+        <img src = "{{picture}}" id = "profile-pic"/>
+        <h2 class = "user-info">{{firstName}} {{lastName}}<br>{{city}}, {{state}}</h2>
+    </script>
+
+    <script id = "quote-template" type = "text/x-handlebars-template">
+        <p>Favorite quote:</p>
+        <h4>{{quote}}</h4> 
+    </script>
+
+    
+    <script id = "pokemon-template" type = "text/x-handlebars-template">
+        <img src="{{image}}" id = "pokemon-image"/>
+        <h2 id = "pokemon-text">Favorite Pokemon: {{name}}</h2>
+    </script>
+
+    
+    <script id = "meat-template" type = "text/x-handlebars-template">
+        <h4 class = "meat-text">About me:<br>{{meat}}</h4>
+    </script>
+
+    
+    <script id = "friends-template" type = "text/x-handlebars-template"> 
+        {{# each friends}}
+        <li class = "friends">{{firstName}} {{lastName}}</li>
+        {{/ each}}
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="APIManager.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
